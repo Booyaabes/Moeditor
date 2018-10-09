@@ -1,6 +1,6 @@
 {
-  "name": "moeditor",
-  "version": "0.2.0",
+  "name": "moeditor-mermaid",
+  "version": "0.3.0",
   "description": "Your all-purpose markdown editor",
   "main": "app/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Menci/Moeditor.git"
+    "url": "git+https://github.com/Booyaabes/Moeditor.git"
   },
   "keywords": [
     "markdown",
@@ -18,16 +18,16 @@
   "author": "Menci",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Menci/Moeditor/issues"
+    "url": "https://github.com/Booyaabes/Moeditor/issues"
   },
-  "homepage": "https://github.com/Menci/Moeditor#readme",
+  "homepage": "https://github.com/Booyaabes/Moeditor#readme",
   "dependencies": {
     "biu.js": "^1.2.0",
     "codemirror": "^5.18.2",
     "configstore": "^2.1.0",
-    "electron": "^1.4.0",
-    "electron-localshortcut": "^0.6.1",
-    "electron-titlebar": "0.0.2",
+    "electron": "^3.0.3",
+    "electron-localshortcut": "^3.1.0",
+    "electron-titlebar": "0.0.3",
     "flowchart.js": "^1.6.3",
     "font-awesome": "^4.6.3",
     "highlight.js": "^9.6.0",
@@ -38,8 +38,9 @@
     "lrucache": "^1.0.2",
     "mathjax": "^2.6.1",
     "mathjax-node": "^0.5.1",
+    "mermaid": "^7.1.2",
     "mime": "^1.3.4",
-    "moemark": "^0.3.8",
+    "moemark-mermaid": "^0.3.11",
     "os-locale": "^1.4.0",
     "raphael": "^2.2.1"
   }

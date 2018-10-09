@@ -140,28 +140,28 @@ class MoeditorApplication {
     }
 
     registerShortcuts() {
-        shortcut.register('Ctrl + N', () => {
+        shortcut.register('Ctrl+N', () => {
             MoeditorAction.openNew();
         });
 
-        shortcut.register('Ctrl + O', () => {
+        shortcut.register('Ctrl+O', () => {
             MoeditorAction.open();
         });
 
-        shortcut.register('Ctrl + S', () => {
+        shortcut.register('Ctrl+S', () => {
             MoeditorAction.save();
         });
 
-        shortcut.register('Ctrl + Shift + S', () => {
+        shortcut.register('Ctrl+Shift+S', () => {
             MoeditorAction.saveAs();
         });
 
-        shortcut.register('Ctrl + Shift + R', () => {
+        shortcut.register('Ctrl+Shift+R', () => {
             let w = require('electron').BrowserWindow.getFocusedWindow();
             if (w) w.webContents.send('change-edit-mode', 'read');
         });
 
-        shortcut.register('Ctrl + Shift + G', () => {
+        shortcut.register('Ctrl+Shift+G', () => {
             let w = require('electron').BrowserWindow.getFocusedWindow();
             if (w) w.webContents.send('change-edit-mode', 'write');
         });
