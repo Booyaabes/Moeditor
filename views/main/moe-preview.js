@@ -23,7 +23,7 @@ var updatePreview = false, updatePreviewRunning = false;
 const MoeditorHighlight = require('./moe-highlight');
 const MoeditorMathRenderer = require('./moe-math');
 const MoeditorUMLRenderer = require('./moe-uml');
-const MoeMark = require('moemark');
+const MoeMark = require('moemark-mermaid');
 const SVGFixer = require('./svgfixer');
 const path = require('path');
 const url = require('url');

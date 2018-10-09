@@ -51,9 +51,17 @@ function renderFlow(str) {
 
 var mermaidCount = 1;
 function renderMermaid(str) {
-    let res = mermaidAPI.render(`mermaid${mermaidCount}`, str);
-    mermaidCount += 1;
-    return `<div>${res}</div>`;
+    try {
+        // Test str syntax
+        mermaidAPI.parse(str);
+        let res = mermaidAPI.render(`mermaid${mermaidCount}`, str);
+        mermaidCount += 1;
+        return `<div>${res}</div>`;
+    }
+    catch(err){
+        mermaidCount += 1;
+        return '<div>Mermaid syntax error</div>';
+    }
 }
 
 function render(str, type) {
