@@ -11,6 +11,7 @@ Visit our [homepage](https://moeditor.github.io/) or download [releases](https:/
 * GitHub Flavored Markdown
 * TeX math expressions
 * UML diagrams
+* Mermaid support (powered by [mermaid.js](https://mermaidjs.github.io/))
 * Code highlight in editor
 * Read/Write/Preview mode
 * Custom font / line height / font size
